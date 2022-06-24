@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3027ecf0.css",
+    "main.js": "/static/js/main.140a68af.js",
+    "static/js/787.720e9ca5.chunk.js": "/static/js/787.720e9ca5.chunk.js",
+    "static/media/homeImage.jpg": "/static/media/homeImage.7876da9e57d3bd13dcc4.jpg",
+    "static/media/chef2.jpg": "/static/media/chef2.830916b35f6f47d7977d.jpg",
+    "static/media/chef4.jpg": "/static/media/chef4.a9aa85433602c7bb3d39.jpg",
+    "static/media/chef3.jpg": "/static/media/chef3.0d224a8a6c8e73f12cc1.jpg",
+    "static/media/chef1.jpg": "/static/media/chef1.252f7fa5833b1f665917.jpg",
+    "static/media/menu.png": "/static/media/menu.845122aa221dd6afaa79.png",
+    "static/media/DeliveryHero.jpg": "/static/media/DeliveryHero.2fe13a1bfae4c8221549.jpg",
+    "static/media/uberEats.png": "/static/media/uberEats.b2a76199d421045bd6c1.png",
+    "static/media/Instacart.png": "/static/media/Instacart.6d1550be148cecdcb95f.png",
+    "static/media/grubhub.png": "/static/media/grubhub.83763854e823487d6efe.png",
+    "index.html": "/index.html",
+    "main.3027ecf0.css.map": "/static/css/main.3027ecf0.css.map",
+    "main.140a68af.js.map": "/static/js/main.140a68af.js.map",
+    "787.720e9ca5.chunk.js.map": "/static/js/787.720e9ca5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3027ecf0.css",
+    "static/js/main.140a68af.js"
+  ]
+}
