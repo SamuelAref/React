@@ -1,0 +1,427 @@
+{
+
+    "product":[
+
+        {
+            "id":1,
+            "name":"Light Gray Rug",
+            "price":59.68,
+            "stock":2,
+            "rating":4,
+            "review":"I just painted my master bathroom, which is quite large, a color called \"silver\". It is a Behr paint. On my walls with the light from a huge window, it is the color of concrete. This rug is absolutely perfect. I had my fingers crossed until it got here, that I was not wrong in going with the modern look and all the color. My floor tile is a white/gray and the walls \"concrete\" - this rug is a knockout in there. Love it.",
+            "category" : "tech"
+        },
+
+        {
+            "id":2,
+            "name":"Light Gray Curtain",
+            "price":63.99,
+            "stock":"out of stock",
+            "rating":5,
+            "review":"These drapes have really elevated the look of our new home! I have them in birch/108\" in my living/nook area and hung high. I also have them in birch 96\" in my girls' room. Then I have them in oyster/108\" in my dining. They are perfect. I hung them initially using the loops, but then I ordered the 1inch drapery pins + the round hooks and omg, that changes the game! With them being so high and the rod going through the fabric loops, it was harder to slide them without shifting the rod, due to thebdiameter of my rod. So the rings allow me to position, open and close them with the ease of a shower curtain. These are so pretty",
+            "category" : "home"
+
+        },
+
+        {
+            "id":3,
+            "name":"Wooden Table",
+            "price":76.68,
+            "stock":12,
+            "rating":4,
+            "review":"This is a lovely little table. It's well made and very sturdy. I bought this based on the reviews and was not disappointed. My husband and I have been using this table in our kitchen nook for over six months now and are very pleased with it. I would recommend this if you are looking for nice small table. I think it's a great buy for the price.",
+            "category" : "home"
+
+        },
+
+        {
+            "id":4,
+            "name":"Accounting Principles",
+            "price":14.50,
+            "stock":8,
+            "rating":5,
+            "review":"One is thinking about a profession in bookkeeping this book is an absolute necessity. It truly takes you from the very fundamentals of bookkeeping to corporate dimension of bookkeeping. Every section is brimming with staggering beautiful pictures, graphs, and huge amounts of precedents and rundowns. Moreover, the finish of the part questions are a gold mine to cement the real section learning. I exceptionally prescribe this book or anybody of its versions (very little changes starting with one release then onto the next)",
+            "category" : "education"
+
+        },
+
+        {
+            "id":5,
+            "name":"Financial Accounting",
+            "price":8.99,
+            "stock":23,
+            "rating":2,
+            "review":"This only took a few hours to read, and provided a good reminder of the basics I learned in college, but have not used recently.",
+            "category" : "education"
+
+        },
+
+        {
+            "id":6,
+            "name":"The Social Media Marketing Book ",
+            "price":11.99,
+            "stock":4,
+            "rating":5,
+            "review":"\"Your customers and your competition are already involved in social media. Why aren't you?\" ~ pg. 8If you are interested in Blogs (WordPress), Twitter, Facebook, MySpace, LinkedIn, YouTube, Flickr, Digg, Yelp and Second Life (a virtual world) then this book may appeal to you. The book doesn't focus on marketing but rather introduces these sites and gets you up to date on the terminology of the Web. I thought there was some useful advice about interacting at forums. I also liked what Dan Zarella had to say about blogs: \"content trumps comments.\" He also mentions that a blog will be more effective if it sticks to a single topic. \"When responding to a review, keep a cool head. If a poster gets you upset, don't respond right away; step away from the computer for a while to calm down.\" ~ pg. 137",
+            "category" : "education"
+
+        },
+
+        {
+            "id":7,
+            "name":"Digital Marketing Strategy",
+            "price":41.99,
+            "stock":12,
+            "rating":5,
+            "review":"\"A thorough and highly readable summary of everything marketers and business leaders need to know as they navigate our complex digital world. Kingsnorth pulls off the difficult task of balancing theoretical summary with both actionable steps and clarity in a vital book for marketers.\" ― Jon Mowat, Managing Director, Hurricane Media",
+            "category" : "education"
+
+        },
+
+        {
+            "id":8,
+            "name":"Frost Rug",
+            "price":131,
+            "stock":"out of stock",
+            "rating":5,
+            "review":"Absolutely love this rug! I had been looking for a rug for my laundry room and found it on Wayfair. It was perfect but at $65 it was too steep for an area that nobody else sees. Sure enough I looked an Amazon and found it for around the same price. But at the bottom of the ad there was a returned one for $29. I thought “Perfect!” I got it in the mail and it’s exactly what I was looking for. Not too gray, not too black and matches my decor. If you have started looking at the return items/warehouse deals area on Amazon posts you don’t know what you are missing! I have saved a ton by buying from that area. This would be perfect for a hallway, entry and of course laundry room:)",
+            "category" : "home"
+
+        },
+
+        {
+            "id":9,
+            "name":"Green Curtains",
+            "price":36.77,
+            "stock":28,
+            "rating":5,
+            "review":"These drapes have really elevated the look of our new home! I have them in birch/108\" in my living/nook area and hung high. I also have them in birch 96\" in my girls' room. Then I have them in oyster/108\" in my dining. They are perfect. I hung them initially using the loops, but then I ordered the 1inch drapery pins + the round hooks and omg, that changes the game! With them being so high and the rod going through the fabric loops, it was harder to slide them without shifting the rod, due to thebdiameter of my rod. So the rings allow me to position, open and close them with the ease of a shower curtain. These are so pretty!",
+            "category" : "home"
+
+        },
+
+        {
+            "id":10,
+            "name":"Blue Curtains",
+            "price":"39.98",
+            "stock":3,
+            "rating":3,
+            "review":"These are as nice as curtain panels I've looked at for 3X the cost. I am very particular as my last ones were custom made, but I didn't want to spend that kind of money again. I purchased 6 panels of the Oatmeal color (greige) for my living room/ dining room. The multiple hanging options is a major plus. I used hooks with rings for a more formal pleated look. They are thick so they hang nicely. Panels are pretty consistent in length which you don't always get with ready made panels. You will need to steam them as they have been folded in the package. Excellent buy for the money.",
+            "category" : "home"
+
+        },
+
+        {
+            "id":11,
+            "name":"Gray Sofa",
+            "price":42.99,
+            "stock":7,
+            "rating":4,
+            "review":"I have been looking at Stone and Beam couches for months. Finally, I was ready to buy and many of them are sold out - so I ended up deciding on this one because it is still a deep-seated couch and the fabric is 100% cotton. I also loved that I received this couch 3 days after I ordered it. Delivery was perfect - they arrived in the middle of the 3-hour window given. It came in a big box which my toddlers are still enjoying. Took about 5 minutes to completely unbox and set up - simple. It did have a 'new' smell that some said was like gasoline. I never felt it was that strong and after a few hours it didn't smell at all. This cotton isn't as soft as microfiber but it's actually a natural fiber that will wear very well. I think it feels nice and sturdy. Someone in a review compared it to a pair of jeans and I think that is a good comparison but slightly softer. We all love the feel of the couch. I have a big white dog and two toddler boys so something like cotton is better for us. Dog hair doesn't stick and neither do crums from my boys. Within two days everyone in our family had fallen asleep on this couch. It is incredibly comfortable. The seat is firm and the back cushions are pillowy. Easy to get in and out of. The deep seat is a game-changer for us - we love it. My husband is 6ft 4 and finally enjoys sitting on the couch with us. We want to get the ottoman next to create a chaise to the couch when wanted. I love that I can take everything off this couch and throw it in the wash when needed. But so far, just wiping things clean has worked well. I wanted a couch that would last for 10-15 years and I think this couch will do just that. It is sturdy, comfy, well made, and looks so good in our living room!",
+            "category" : "home"
+
+        },
+
+        {
+            "id":12,
+            "name":"Samsung HDD 1TB",
+            "price":119.99,
+            "stock":120,
+            "rating":3,
+            "review":"I returned the 1st one because it wouldn't detect. I had the same problem with the replacement one. I had to go seagate's sight and download their disc wizard. After that it worked. There are NO instructions that come with it just a warranty paper, so you just have to know enough figure that out on your own. No other hd of mine has needed this",
+            "category" : "tech"
+
+        
+        },
+
+        {
+            "id":13,
+            "name":"Transcend HDD 2TB",
+            "price":189.77,
+            "stock":50,
+            "rating":5,
+            "review":"While I love the capacity of the drive, the fact that Seagate did not disclose that this drive was SMR technology has rendered it useless for my purposes, which was for a RAID 1 XBOX external hard drive. For those unaware, SMR is Shingled Magnetic Recording versus the Conventional Magnetic Recording. The way shingled works is much like your roofing shingles, where bits are laid down in order. The issue is that when a single bit needs to be rewritten, the ENTIRE shingle sector must be written (yes, I'm simplifying the tech a little intentionally).",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":14,
+            "name":"Realme C21Y",
+            "price":269.98,
+            "stock":24,
+            "rating":1,
+            "review":"First, it wasn't totally compatible with T-Mobile like they advertised; phone would work, but data did not. Sound quality was so poor, both phone calls and listening to the speaker. Photos were washed out. Nice design and huge battery, but that's it. Luckily, I returned it to Amazon.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":15,
+            "name":"Samsung A70",
+            "price":39.99,
+            "stock":89,
+            "rating":3,
+            "review":"I really liked this phone until it stopped charging for no apparent reason. It seems that the OS developed a critical failure somewhere and that kept it from charging. Apparently there is no way to fix that issue.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":16,
+            "name":"BPL Smart TV",
+            "price":49.99,
+            "stock":"out of stock",
+            "rating":5,
+            "review":"For the price this tv is excellent. Yes I know it is only 1080p and Roku platform but for a bedroom tv it looks great and functions perfectly. For sub $200 I feel I got more than what I paid for and thats always a plus Add a firestick and it's perfect. Edit: a wall mount for this is also a great addition.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":17,
+            "name":"Beats Headphone",
+            "price":194.99,
+            "stock":5,
+            "rating":5,
+            "review":"We bought beats headphones to help with our over stimulation as parents of 5 little girls. (Yes, 5. Please pray thanks.) The second I put them on I felt the Hallelujah chorus in my soul. I'm blaring techno and the girls are SILENT to me. No little baby bum, no screaming, no fighting. Life is peachy. Maybe they're upset. Maybe they're happy. The world in Andrea's head will never know. 🤣 10 out of 10 recommend.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":18,
+            "name":"Canon Printer",
+            "price":1497,
+            "stock":21,
+            "rating":4,
+            "review":"I read the reviews about setting up the printer and braced myself after I bought it. And let me tell you, the reviews were correct!!!!! It made no sense how long it took to set up the WiFi. The worst part about setting up the WiFi is it kept stating to follow the instructions but THERE WERE NO INSTRUCTIONS FOR WIFI SET UP!!!!!! Through much hair pulling and process of elimination, I finally was able to get it connected. The one tear of satisfaction was still did not ease my stress. Future buyers here’s a clue, set up the WiFi through the printer and not through the app",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":19,
+            "name":"Optoma Projector",
+            "price":89.99,
+            "stock":18,
+            "rating":5,
+            "review":"There weren't very many reviews on this particular projector. We were looking to upgrade to 4K, but didn't want a super big price tag. This was decent priced for what we were looking for. I compared the UHD38 and UHD50X to this projector. The only thing that I noticed a big difference was the lumens and the price. This was only 400 lumens less than the UHD38...and everything else they had the same exact features on it. The UHD50X difference is it's easier to fine tune the image alignment with 5-15 % vertical lens shift and wider 1.3x zoom. I pretty much had my previous projector set (1080p HD projector) and it was easy to set this projector up. I didn't need to adjust much at all. The UHD35 is a bit cheaper than the UHD38 and it probably because of the lumens difference. I purchased the 2021 model. I have a screen made to work well with ambient light, so we don't have lighting issues...picture is phenomenal as it is very crisp and clear even during the day. You will not be disappointed....we definitely are very pleased! I didn't have the issues that some reviewers said that they had. It was very easy to set up and we are very pleased with our purchase. 11/24/21 - I wanted to give my experience with this projector after having it for some time. Still amazed by the beautiful picture it produces. The details and color when we watch movies are fantastic. My kids have their Nintendo Switch connected and they love having their friends over to play on the big screen (we have a 120\" screen). Again, picture is great in daylight and shades are down, but light coming in doesn't affect the picture. The only thing is this does not have blue tooth connection for a speaker so we purchased a device we connected to the speaker jack that lets us connect a blue tooth / wireless speaker to it...works great!",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":20,
+            "name":"HP Laser Printer",
+            "price":39.99,
+            "stock":2,
+            "rating":5,
+            "review":"You do not need to sign up for HP+ to set this printer up. There is a great YouTube video that shows you step by step how to set it up and skip the subscription process. Only bummer was, I couldn’t download the app with my Mac because it requires 10.14 or higher software. Wish I knew that before. But it works for my phone. Prints fast. No complaints so far.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":21,
+            "name":"Home Heater",
+            "price":74.99,
+            "stock":16,
+            "rating":1,
+            "review":"Lated exactly 6 days but thats not even the issue here - This is a FIRE HAZARD. It exploded this morning with a loud hissing sound spewing hot oil on my wife feet, the carpet, walls, my bed. Our 1.5 month old daughter who co-sleeps in our bedroom in her crib was in the room sleeping and thankfully my wife was awake to pull the chord out, open the windows and get our daughter out of the room. Her feet got sprayed with a mist of hot oil which and she washed off with water soon after. Her first reaction was to pull the electrical chord out and take our daughter out of the room. The oil felt hot but it does not look like it was hot enough to burn the skin. I moved the unit out of the house and spent the next hour cleaning up the oil soaked into our carpet and various surfaces. The entire house reeks of a horrible petroleum smell. I guess we will have to rip out the carpet to get rid of the smell. The only positive aspect I can think off is that thankfully the leaking oil did not catch on fire. Terrible scary experience. I am going to contact the company to see what they have to say but felt the need to write this review to warn others. DO NOT BUY THIS",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":22,
+            "name":"Citizen Calculator",
+            "price":36.22,
+            "stock":16,
+            "rating":5,
+            "review":"I needed a calculator that allowed more than 8 digits for tax work and I really liked my current Casio calculator so I went with this one. When it arrived I actually laughed out loud because it was so comically large. In an office setting I may be a little embarrassed to use this around other people (due to it's size) but I work from home and it's a great calculator. It's about 8.25\" x 6",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":23,
+            "name":"Glass set",
+            "price":27.95,
+            "stock":56,
+            "rating":5,
+            "review":"These are outstanding glasses if you're a drinker. Without question they're perfect for whiskey or tequila straight or with a cube of ice. But what I was worried about, were they big enough for a mixed drink, my daily driver glass for when I pour \"an ounce\" of vodka, 5 or 6 ice cubes, and red bull to the top. Yes, it's perfect for that. Not too big, not too small. The thick bottom, is it too thick? No. My 6 glasses didn't have a defect that I noticed, and I'm a real prick when it comes to that stuff. I am pretty happy to get 6 glasses of this quality delivered to my door for this price",
+            "category" : "food"
+
+        },
+
+        {
+            "id":24,
+            "name":"Golden Plates",
+            "price":29.95,
+            "stock":10,
+            "rating":0,
+            "review":"No ratings or reviews",
+            "category" : "food"
+
+        },
+
+        {
+            "id":25,
+            "name":"Knife set",
+            "price":48.99,
+            "stock":10,
+            "rating":5,
+            "review":"Reviewed in the United States on January 11, 2019 Size: Knife Block Set (22-Piece)Color: Brushed SatinVerified Purchase Just came in today I got this for my Mom and Dad for home use it's pretty heavy n the package but looks great the blades are pretty thin so I'm nervous about the hold up if it falls will it snap and if it will just but if anything happens I'll put up another review follow up but the knifes handles are great and light weight a few rough edges on the close up of the knife holder but it spins great",
+            "category" : "food"
+
+        },
+
+        {
+            "id":26,
+            "name":"White Bowls",
+            "price":26.99,
+            "stock":1,
+            "rating":5,
+            "review":"45 years ago, I received a Corelle dinner set for 8 people as a wedding gift. I still have most of the wedding set . They last a long, long time. I've dropped several of them over the years on ceramic kitchen tile and wood floors. I expected them to shatter into a million pieces. They didn't. I've frozen them. Baked them and microwaved them. The only thing I don't do is heat them over my stove's burner. They have remained intact. I'm currently replacing bowls because my ex-took them when he left. I highly recommend them and the brand",
+            "category" : "food"
+
+        },
+
+        {
+            "id":27,
+            "name":"Konka Refrigerator",
+            "price":2399.99,
+            "stock":2,
+            "rating":4,
+            "review":"I've had this 5 days and love it. Bought it in an emergency as my big frig. went out and I'm waiting for a new one to be shipped. This little frig. will tide me over until it arrives. The freezer is a good size to make 2 reg. ice cube trays and the inside of the frig. holds pretty much. I wish it had a different design inside of the door though. Wasted space holding cans that are hard to remove where 3 little shelves could hold other items. But all in all it's a quality item and working perfectly right now. Really pleasing to the eye",
+            "category" : "food"
+
+        },
+
+        {
+            "id":28,
+            "name":"Black Bowls",
+            "price":33.99,
+            "stock":3,
+            "rating":5,
+            "review":"what's to say, I think everyone know what corelle is. My husband and I received Corelle when we got married 42 years ago and we are still using it. It survives most everything, except being dropped on a ceramic floor. At one point, I bought a set of \"real dishes\". it wasn't long before I realized how great Corelle is. it doesn't take up much room, doesn't kill your hands to carry, microwaves well, cleans easy. it is the dish of choice! Got rid of those \"real dishes\" and now only have Corelle again. I gave away some of my Corelle bowls to a friend who needed everything and between that and the tile floor taking out a few bowls I needed to replace some bowls. Highly recommend",
+            "category" : "food"
+
+        },
+
+        {
+            "id":29,
+            "name":"Samsung Fridge",
+            "price":1899.99,
+            "stock":3,
+            "rating":5,
+            "review":"Are old fridge was leaking and after about 15 years it was time to replace. I read all of Amazons reviews and they are quite accurate on this product. The date of delivery was exact. The movers did an excellent job and were enjoyable to talk to. The product isn't top of the line but the price is quite reasonable and works great. Its also guaranteed for a good period of time by Amazon. NO intentions of replacing but the insurance is there. Not sure about the Kenmore-Sears idea but so far so good.",
+            "category" : "food"
+
+        },
+
+        {
+            "id":30,
+            "name":"Nikon Camera",
+            "price":1204.32,
+            "stock":4,
+            "rating":5,
+            "review":"Pros, great looking photos, easy to use, full HD video, great zoom.Cons, has a lot of trouble focusing when zoomed, at times can almost make the zoom useless. Lack of any manual control over shutter speed, focus, or really anything. I like to be able to take timed exposures for waterfalls and such, completely impossible with this camera. I can't seem to find a camera in this price point that does have that feature however, so I can't necessarily deduct a star for it. But, I feel slightly generous only docking one for the zoom issue. While taking a video, I zoomed in on a waterfall, the entire shot stayed blurry for a good 30 seconds before it finally came into focus. I don't really see a good excuse for that, wildlife photos may prove nearly impossible. I managed to shoot a squirrel and a woodpecker, but only from a great distance so they wouldn't scare too quickly to get a shot.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":31,
+            "name":"AirPods",
+            "price":210.32,
+            "stock":4,
+            "rating":5,
+            "review":"These AirPods are amazing they automatically play audio as soon as you put them in your ears and pause when you take them out. A simple double-tap during music listening will skip forward. To adjust the volume, change the song, make a call, or even get directions, just say \"Hey Siri\" to activate your favorite personal assistant. Plus, when you're on a call or talking to Siri, an additional accelerometer works with dual beamforming microphones to filter out background noise and ensure that your voice is transmitted with clarity and consistency. Additionally, they deliver five hours of listening time on a single charge, and they're made to keep up with you thanks to a charging case that holds multiple additional charges for more than 24 hours of listening time. Just 15 minutes in the case gives you three hours of listening to time or up to two hours of talk time. I would highly recommend it to anyone looking to buy",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":32,
+            "name":"Air Pods Pro",
+            "price":399.50,
+            "stock":5,
+            "rating":5,
+            "review":"Let me just say these are cleannn! They are made in Vietnam, which is a fact, because they do have assembly lines in Viet. Quality is not compromised and they are legit. Sound is perfect, and the noise cancellation works like a charm. Spatial Audio has been working amazingly, everything is great with these, no complaints!",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":33,
+            "name":"Apple Watch 5",
+            "price":399.00,
+            "stock":2,
+            "rating":4,
+            "review":"Love my watch. It answer my calls my txt and i can do challenges with no friends. It’s a small phone on my wrist.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":34,
+            "name":"Apple Watch 6",
+            "price":399.00,
+            "stock":8,
+            "rating":5,
+            "review":"This is a fantastic product. I gave it to my wife as a gift to replace her high-end Fitbit that she’s had for several years. She wears this new Apple watch 24 x 7 x 365 and absolutely loves it. The band is soft and comfortable, yet durable. The interface is fantastic. She loves all the features including sleep tracking and typical activity monitoring. She loves that she can see virtually all activity from her iphone on the watch face and that the watch interface is extremely flexible and user-friendly for downloading apps. The colors are incredible and make the face seem bigger than it really is. She loves the wireless charging and the battery life is very good. I’m extremely happy having given her this watch as a gift and she is ecstatic to have received it. Highly recommended.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":35,
+            "name":"Mac Book",
+            "price":749.30,
+            "stock":1,
+            "rating":5,
+            "review":"Beautiful laptop. I’ve upgraded from the MacBook Air of old...so far this laptop has blown it away. It wasn’t overly pricey to be honest and I feel it’s worth the price. Overall look is great and keyboard feel is nice. Larger touchpad is great, I’ve paired my Magic Trackpad 2 with it as well.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":36,
+            "name":"iPad Air",
+            "price":699.00,
+            "stock":9,
+            "rating":5,
+            "review":"I purchased this as a sort-of alternative to my laptop. Just something to surf the web and social media on and play the occasional game. The speakers on this thing are INCREDIBLE. So loud and full of depth, it’s great to stream music off of. Totally recommend this for the casual user, and with it’s new chipset, this thing can handle some serious multitasking for the not-so casual. If you’re on the fence about buying an iPad Pro, I recommend you consider this as an option instead, unless video editing is something you’re planning to do constantly. I have no quarrel with this product! It has served me well so far.",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":37,
+            "name":"iPhone X",
+            "price":784.32,
+            "stock":32,
+            "rating":5,
+            "review":"This IPhone X has been phenomenal. The speed at which it operates is Incredible. If you are questioning this buy, don’t. It’s a wonderful deal. I’ve not had one issue thus far, and will most certainly update this review if I have one within the warranty period. I recommend getting a tempered glass screen and a good case—this phone is glass front and back",
+            "category" : "tech"
+
+        },
+
+        {
+            "id":38,
+            "name":"iPhone 11 Pro",
+            "price":904.32,
+            "stock":21,
+            "rating":5,
+            "review":"Finally enough space for my photos and all my apps. It gets a ZERO for fingerprint reader, there is none. I bought the renewed iPhone 11 Pro and it hasn’t a scratch or blemish anywhere. I would certainly recommend one",
+            "category" : "tech"
+
+        }
+
+
+
+    
+    ]
+}
