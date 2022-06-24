@@ -1,0 +1,329 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+   /* align-items: center; */
+  /* justify-content: center;  */
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+
+}
+
+.Nav-Bar{
+
+  /* border: 1px black solid; */
+  background: rgba(0, 0, 0, 0.349);
+  color:#FFE381;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 60px;
+
+}
+
+.Nav-Bar h2{
+
+  margin: 0 20px 0 20px;
+}
+
+.Nav-Bar h2:hover{
+
+  cursor:default;
+}
+
+.link{
+
+  /* border: 1px black solid; */
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  margin-right: 80px;
+  font-size: 20px;
+}
+
+.link a{
+
+
+  text-decoration: none;
+  color:#FFE381;
+  width: auto;
+  height: auto;
+
+
+ 
+
+}
+
+.link a:hover {
+
+  background-color: #FFE381;
+  color:#1A1919 ;
+}
+
+.Home{
+
+  border: 1px black solid;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  /* width: 100%; */
+  /* background-image:url('images/Mountain.jpg'); */
+
+
+}
+
+.welcome{
+
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  background-image: url('images/Mountain.jpg');
+  background-size: cover;
+
+
+}
+.welcome h2{
+
+  z-index: 3;
+  color: #FFE381;
+  margin-bottom: 50px;
+  font-size: 100px;
+}
+
+
+
+
+
+.add-container{
+  
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 695px;
+  background-image: url('images/Mountain.jpg');
+  background-size: cover;
+}
+
+.add-container form{
+
+  border: 1px  hsla(47, 100%, 75%, 0.301) solid;
+  display: inherit;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 500px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: hsla(210, 60%, 17%, 0.301);
+
+}
+
+
+.title, .author, .date, .image, .text-area{
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 20px;
+
+}
+
+.title label, .author label, .date label, .image label, .text-area label{
+
+  font-size: 20px;
+  color: #FFE381;
+}
+
+.title input, .author input, .date input, .image input{
+
+  width: 250px;
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 18px;
+  border: none;
+}
+
+.text-area textarea{
+
+
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.text-area textarea::selection{
+
+  border:none;
+}
+
+
+.text-area{
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  
+}
+
+
+form button{
+
+  margin-left: 100px;
+  height: 30px;
+  border-radius: 18px;
+  border: none;
+  background-color: hsla(210, 60%, 17%, 0.301);
+  color:#ffe481bb;
+  font-weight: 700;
+  border: 1px hsla(47, 100%, 75%, 0.301) solid;
+}
+
+form button:hover{
+
+  cursor: pointer;
+  background-color: #FFE381;
+  color: hsla(210, 60%, 17%, 0.801);
+}
+
+
+.browse{
+
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+  grid-template-rows: 50% 50%;
+  height: 700px;
+  /* width: 100%; */
+
+
+}
+.browse .image-preview {
+
+  /* border: 1px black solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s linear ;
+
+}
+
+.browse .image-preview:hover{
+
+   transform: scale(1.05);
+   cursor: pointer;
+
+}
+
+
+.display{
+
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 700px;
+  background-image: url('images/Mountain.jpg');
+  background-size: cover;
+}
+
+.display-container{
+
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  height: 500px;
+  width: 78%;
+
+}
+
+.display-container .displayBlock{
+
+  border: 1px  hsla(47, 100%, 75%, 0.301) solid;
+  display: inherit;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 500px;
+  width: 650px;
+  border-radius: 20px;
+  background-color: hsla(210, 60%, 17%, 0.301);
+  color: #FFE381;
+}
+
+
+
+
+.displayBlock .display-title, .display-author, .published{
+
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 300px;
+  margin-left: 40px;
+  height: 40px;
+}
+
+.displayBlock .display-author, .published, .description{
+
+  margin-top: -120px;
+}
+
+.displayBlock .description{
+
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+  margin: -150px 0 0 40px;
+  height: auto;
+
+
+}
+
+.displayBlock .description p{
+
+  margin-top: -10px;
+}
+
+.display-container .display-image{
+
+  border: 1px  hsla(47, 100%, 75%, 0.301) solid;
+  width: 300px;
+  height: 500px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}

@@ -1,0 +1,1211 @@
+
+Introduction 
+
+
+  React Hooks 
+
+   Prerequisites 
+      
+      - Basics of react ( functional and class components, props, state, etc.)
+
+
+  What are React Hooks ?
+
+      Hooks are a new feature addition in react version 16.8 which allow
+      you to use react features without having to write a class
+
+      E.g : state of a component 
+
+      Hooks don't work inside classes 
+
+
+  Why Hooks ? 
+
+     Reason 1 - not to use classes 
+     Reason 2 - to make components reusable 
+     Reason 3 - create organized code (Data fetching)
+
+
+  NoteWorthy Points 
+
+    Hooks work for react version 16.8 or higher 
+    backwards-compatible
+
+
+Rules of Hooks 
+
+  - Only call hooks at the top level 
+      Don't call hooks inside loops, conditions or nedted functions 
+
+  - only call hoos from react functions 
+      call them from within react functional components and not just any regular javascript functions 
+
+
+1) State Hook  
+
+    Example 1 - basic UseState Hook 
+
+            import { useState } from "react";
+
+            const HookCounter = () => {
+
+                let [count, setCount] = useState(0);
+
+
+
+                return (
+
+                    <div>
+
+                        <button onClick={() => setCount(count + 1)}> Count {count}</button>
+                    </div>
+                );
+            }
+
+            export default HookCounter;
+
+
+    Example 2 - previous state Hook 
+
+            import { useState } from "react";
+            const HookCounterTwo = () => {
+
+                const initialCount = 0;
+
+                const [count, setCount] = useState(initialCount);
+
+                function incrementByFive() {
+
+                    for (let i = 0; i < 5; i++) {
+
+                        setCount(prevState => prevState + 1);
+
+
+                    }
+                }
+
+                return (
+
+                    <div>
+
+                        Count: {count}
+
+                        <button onClick={() => setCount(initialCount)}>Reset </button>
+                        <button onClick={() => setCount(count + 1)}>Increment </button>
+                        <button onClick={() => setCount(count - 1)}>Decrement  </button>
+                        <button onClick={() => incrementByFive()}>five  </button>
+
+
+
+
+                    </div>
+
+
+                );
+            }
+
+            export default HookCounterTwo;
+
+    
+    Example 3 - UseState with object 
+
+
+            import { useState } from "react";
+            const HookCounterThree = () => {
+
+                const [name, setName] = useState({
+
+                    firstName: '',
+                    lastName: ''
+                })
+
+
+                return (
+
+                    <div>
+
+                        <form >
+
+                            <input
+                                type="text"
+                                value={name.firstName}
+                                onChange={e => setName({ ...name, firstName: e.target.value })} />
+                            {/* the ... used to make the value input at the same time  (the ... is called spread operator and is used to not overwrite the initial values and only add on them)  */}
+
+                            <input
+                                type="text"
+                                value={name.lastName}
+                                onChange={e => setName({ ...name, lastName: e.target.value })} />
+
+                            <h2>First Name is - {name.firstName}</h2>
+                            <h2>First Name is - {name.lastName}</h2>
+
+                        </form>
+
+                    </div>
+                );
+            }
+
+            export default HookCounterThree;
+
+
+    Example 4 - UseState with Arrays 
+
+
+            import { useState } from "react";
+            const HookCounterFour = () => {
+
+                const [items, setItems] = useState([]);
+
+                const addItem = () => {
+
+                    setItems([...items, { // we use spread operator to not overwrite the initial values 
+
+                        id: items.length,
+                        value: Math.floor(Math.random() * 10) + 1
+                    }])
+                }
+
+                return (
+
+
+                    <div>
+
+                        <button onClick={addItem}>Add a number</button>
+
+                        <ul>
+                            {
+                                items.map(item => <li key={item.id}>{item.value}</li>)
+                            }
+                        </ul>
+
+                    </div>
+                );
+            }
+
+            export default HookCounterFour;
+
+
+2) Effect Hook 
+
+    Lets you perform side effects in functional components 
+    
+    use to watch for any change  
+
+
+    Example 1 - useEffect after render 
+
+            import { useState, useEffect } from "react";
+
+            const HookCounter = () => {
+
+                const [count, setCount] = useState(0);
+
+                useEffect(() => {
+
+                    document.title = `you clicked ${count} times`
+                })
+
+
+
+
+                return (
+
+                    <div>
+
+                        <button onClick={() => setCount(count + 1)}>{count} times</button>
+                    </div>
+
+
+                );
+            }
+
+            export default HookCounter;
+
+    Example 2 - Conditionally run effects 
+
+            import { useState, useEffect } from "react";
+
+            const HookCounter = () => {
+
+                const [count, setCount] = useState(0);
+                const [name, setName] = useState('');
+
+                useEffect(() => {
+
+                    console.log('use effect - updating document title ');
+                    document.title = `you clicked ${count} times`
+                }, [count])
+
+
+
+
+                return (
+
+                    <div>
+
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={e => setName(e.target.value)} />
+
+                        <button onClick={() => setCount(count + 1)}>{count} times</button>
+                    </div>
+
+
+                );
+            }
+
+            export default HookCounter;
+
+    Example 3 - Run Effects only once
+
+            import { useState, useEffect } from "react";
+
+            const EffectHookMouse = () => {
+
+                const [x, setX] = useState(0);
+                const [y, setY] = useState(0);
+
+                const logMousePosition = e => {
+
+                    console.log('Mouse event');
+                    setX(e.clientX)
+                    setY(e.clientY)
+
+                }
+
+                useEffect(() => {
+
+                    console.log('useEffect called');
+                    window.addEventListener('mousemove', logMousePosition)
+
+                    //to clean up code and remove unneccessary ones
+                    return () => {
+
+                        console.log('component unmount');
+                        window.removeEventListener('mousemove', logMousePosition)
+                    }
+
+                }, [])
+
+
+
+
+
+                return (
+
+                    <div>
+
+                        Hooks X - {x} Y - {y}
+
+                    </div>
+                );
+            }
+
+            export default EffectHookMouse; 
+
+                Example 4 - UseEffect with cleanup
+
+                import { useState } from "react";
+            import EffectHookMouse from "./EffectHookMouse";
+
+        const EffectHookMouseTwo = () => {
+
+            const [display, setDisplay] = useState(true);
+
+
+            return (
+
+                <div>
+
+                    <button onClick={() => setDisplay(!display)}>Toggle</button>
+                    {display && <EffectHookMouse />}
+
+                </div>
+            );
+        }
+
+        export default EffectHookMouseTwo;
+
+    Example 5 - useEffect with incorrect dependency
+
+        import { useEffect, useState } from "react";
+
+
+        const EffectHookInterval = () => {
+
+            const [count, setCount] = useState(0);
+
+            const tick = () => {
+
+                setCount(count + 1)
+            }
+
+            useEffect(() => {
+
+                const interval = setInterval(tick, 1000)
+
+                return () => {
+
+                    clearInterval(interval);
+                }
+
+
+            }, [count]) //empty is wrong , and also we should define functions inside our useEffect if they are dependencies 
+
+
+            return (
+
+                <div>
+
+                    {count}
+
+                </div>
+            );
+        }
+
+        export default EffectHookInterval;
+
+    Example 6 - Fetching data with useEffect Part 1 
+       (with axios)  it needs internet 
+
+    Example 7 - Fetching data with useEffect part 2 
+        
+        (also needs internet )
+
+    Example 8 - Fetching data with useEffect part 3
+
+        (also needs internet )
+        
+    
+3) Context Hook 
+
+    helps with passing components further down the nested components 
+    instead of passing props one by one 
+
+    App.js -> component A -> component B -> component C
+
+    the older version was tedious but this one is effective , refer video for older version 
+
+    App.js file 
+
+                import React from 'react';
+
+                import ComponentA from './useContext/ComponentA';
+
+                //context creation  then export so that we can import it in the end component (c)
+
+                export const userContext = React.createContext()
+
+
+                function App() {
+
+
+                    return (
+                        <div className="App">
+
+
+
+                        {/* then contain the component  */}
+                        <userContext.Provider value={'sami'}>
+
+                            <ComponentA />
+
+                        </userContext.Provider>
+
+
+
+
+                        </div>
+                    );
+                }
+
+                export default App;
+
+
+    component A file 
+
+            import ComponentB from "./ComponentB";
+
+
+            const ComponentA = () => {
+
+
+                return (
+
+                    <div>
+
+                        <ComponentB />
+
+                    </div>
+                );
+            }
+
+            export default ComponentA;
+
+
+    component B file
+
+            import ComponentC from "./ComponentC";
+
+            const ComponentB = () => {
+
+                return (
+
+                    <div>
+
+                        <ComponentC />
+
+                    </div>
+                );
+            }
+
+            export default ComponentB; 
+
+
+    component C file 
+
+            import { userContext } from "../App";
+            import { useContext } from "react";
+
+            const ComponentC = () => {
+
+                const user = useContext(userContext);
+
+
+
+                return (
+
+                    <div>
+
+                        {user}
+
+                    </div>
+                );
+            }
+
+            export default ComponentC;
+
+     
+4) Reducer Hook 
+
+    What is a reducer 
+
+        is a hook used for state management 
+        alternative to useState 
+
+    What's the difference between useState and useReducer 
+
+         useState is built using useReducer
+
+
+    Differences between useReducer vs useState  
+
+        reduce                       vs          useReducer 
+
+        js                                          react 
+
+        takes two parameters                takes two parameters 
+        (reducer, initialValue)           (reducer, initialState)
+
+        singleValue = reducer(           newState = reducer(
+            accumulator, itemValue          currentState,action 
+        )                                   )
+
+        returns single value              returns pair of values 
+                                        [newState, dispatch]
+
+
+    Example 1 - Simple State & Action 
+
+            import { useReducer } from "react";
+
+
+        const initialState = 0;
+
+        const reducer = (state, action) => {
+
+            switch (action) {
+
+                case 'increment': return state + 1
+
+                case 'decrement': return state - 1
+
+                case 'reset': return initialState
+
+                default: return state
+            }
+
+        }
+
+        const ReduceHookCounter = () => {
+
+
+            //dispatch is a method not a variable name
+            const [count, dispatch] = useReducer(reducer, initialState)
+
+
+
+
+            return (
+
+                <div>
+
+                    <div>Count - {count}</div>
+
+                    <button onClick={() => dispatch('increment')}>Increment</button>
+                    <button onClick={() => dispatch('decrement')}>Decrement</button>
+                    <button onClick={() => dispatch('reset')}>Reset</button>
+
+                </div>
+            );
+        }
+
+        export default ReduceHookCounter; 
+
+
+    Example 2 - Complex State & action 
+
+            import { useReducer } from "react";
+
+
+        const initialState = {
+
+            firstCounter: 0,
+            SecondCounter: 10
+        };
+
+        const reducer = (state, action) => {
+
+            switch (action.type) {
+
+                case 'increment': return { ...state, firstCounter: state.firstCounter + action.value }
+
+                case 'decrement': return { ...state, firstCounter: state.firstCounter - action.value }
+
+                case 'increment2': return { ...state, SecondCounter: state.SecondCounter + action.value }
+
+                case 'decrement2': return { ...state, SecondCounter: state.SecondCounter - action.value }
+
+
+                case 'reset': return initialState
+
+                default: return state
+            }
+
+        }
+
+        const ReduceHookCounterTwo = () => {
+
+
+            //dispatch is a method vaiable name 
+            const [count, dispatch] = useReducer(reducer, initialState)
+
+
+
+
+            return (
+
+                <div>
+
+                    <div>Count1 - {count.firstCounter}</div>
+                    <div>Count2 - {count.SecondCounter}</div>
+
+
+                    <button onClick={() => dispatch({ type: 'increment', value: 1 })}>Increment</button>
+                    <button onClick={() => dispatch({ type: 'decrement', value: 1 })}>Decrement</button>
+
+
+                    <button onClick={() => dispatch({ type: 'increment', value: 5 })}>Increment 5</button>
+                    <button onClick={() => dispatch({ type: 'decrement', value: 5 })}>Decrement 5</button>
+                    <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
+
+                    <div>
+
+
+                        <button onClick={() => dispatch({ type: 'increment2', value: 1 })}>Increment2</button>
+                        <button onClick={() => dispatch({ type: 'decrement2', value: 1 })}>Decrement2</button>
+                    </div>
+
+                </div>
+            );
+        }
+
+        export default ReduceHookCounterTwo; 
+
+
+    Example 3 - Multiple useReducers 
+
+            import { useReducer } from "react";
+
+
+        const initialState = {
+
+            firstCounter: 0,
+            SecondCounter: 10
+        };
+
+        const reducer = (state, action) => {
+
+            switch (action.type) {
+
+                case 'increment': return { ...state, firstCounter: state.firstCounter + action.value }
+
+                case 'decrement': return { ...state, firstCounter: state.firstCounter - action.value }
+
+                case 'increment2': return { ...state, SecondCounter: state.SecondCounter + action.value }
+
+                case 'decrement2': return { ...state, SecondCounter: state.SecondCounter - action.value }
+
+
+                case 'reset': return initialState
+
+                default: return state
+            }
+
+        }
+
+        const ReduceHookCounterTwo = () => {
+
+
+            //dispatch is a method not a variable name
+            const [count, dispatch] = useReducer(reducer, initialState)
+
+
+
+
+            return (
+
+                <div>
+
+                    <div>Count1 - {count.firstCounter}</div>
+                    <div>Count2 - {count.SecondCounter}</div>
+
+
+                    <button onClick={() => dispatch({ type: 'increment', value: 1 })}>Increment</button>
+                    <button onClick={() => dispatch({ type: 'decrement', value: 1 })}>Decrement</button>
+
+
+                    <button onClick={() => dispatch({ type: 'increment', value: 5 })}>Increment 5</button>
+                    <button onClick={() => dispatch({ type: 'decrement', value: 5 })}>Decrement 5</button>
+                    <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
+
+                    <div>
+
+
+                        <button onClick={() => dispatch({ type: 'increment2', value: 1 })}>Increment2</button>
+                        <button onClick={() => dispatch({ type: 'decrement2', value: 1 })}>Decrement2</button>
+                    </div>
+
+                </div>
+            );
+        }
+
+        export default ReduceHookCounterTwo; 
+
+
+    Example 4 - UseReducer with useContext 
+
+       Share state between components - Global State management 
+
+       scenario 
+
+       an app with three components A B and C 
+
+       each have own counter used with reduce 
+
+       so we declare the global counter app.js then use context to send to each component to reducer 
+
+
+       app.js file 
+
+                import React, { useReducer } from 'react';
+            import ComponentA from './useReduce/ComponentA';
+            import ComponentB from './useReduce/ComponentB';
+            import ComponetntC from './useReduce/ComponentC';
+
+
+            export const CountContext = React.createContext()
+
+            const initialState = 0;
+
+            const reducer = (state, action) => {
+
+            switch (action) {
+
+                case 'increment': return state + 1
+
+                case 'decrement': return state - 1
+
+                case 'reset': return initialState
+
+                default: return state
+            }
+
+            }
+
+
+            function App() {
+
+            const [count, dispatch] = useReducer(reducer, initialState)
+
+
+
+            return (
+
+                <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+
+                <div className="App">
+
+
+
+                    {/* <ReduceHookCounter /> */}
+                    {/* <ReduceHookCounterTwo /> */}
+                    {/* <ReduceHookCounterThree /> */}
+
+                    <div>Count - {count}</div>
+                    <ComponentA />
+                    <ComponentB />
+                    <ComponetntC />
+
+
+
+
+                </div>
+
+                </CountContext.Provider>
+
+            );
+            }
+
+            export default App;
+
+
+       component A 
+
+                import { useContext } from "react";
+            import { CountContext } from "../App";
+
+            const ComponentA = () => {
+
+                const countContext = useContext(CountContext)
+
+
+                return (
+
+                    <div>
+
+                        ComponentA
+
+                        <button onClick={() => countContext.countDispatch('increment')}>Increment</button>
+                        <button onClick={() => countContext.countDispatch('decrement')}>Decrement</button>
+                        <button onClick={() => countContext.countDispatch('reset')}>Reset</button>
+
+
+                    </div>
+                );
+            }
+
+            export default ComponentA;
+
+
+       component B 
+
+                import ComponentD from "./ComponentD";
+
+            const ComponentB = () => {
+
+
+                return (
+
+                    <div>
+
+                        <ComponentD />
+                    </div>
+                );
+            }
+
+            export default ComponentB;
+
+
+       component C 
+
+                import ComponentE from "./ComponentE";
+
+            const ComponetntC = () => {
+
+                return (
+                    <div>
+
+                        <ComponentE />
+
+                    </div>
+                );
+            }
+
+            export default ComponetntC;
+
+
+       component D 
+
+                import { useContext } from "react";
+            import { CountContext } from "../App";
+
+            const ComponentD = () => {
+
+                const countContext = useContext(CountContext)
+
+
+                return (
+
+                    <div>
+
+                        ComponentD
+
+                        <button onClick={() => countContext.countDispatch('increment')}>Increment</button>
+                        <button onClick={() => countContext.countDispatch('decrement')}>Decrement</button>
+                        <button onClick={() => countContext.countDispatch('reset')}>Reset</button>
+
+
+                    </div>
+                );
+            }
+
+            export default ComponentD;
+
+
+       component E
+
+                import ComponentF from "./ComponentF";
+
+            const ComponentE = () => {
+
+                return (
+                    <div>
+
+                        <ComponentF />
+
+                    </div>
+                );
+            }
+
+            export default ComponentE; 
+
+        
+       component F
+
+                import { useContext } from "react";
+            import { CountContext } from "../App";
+
+            const ComponentF = () => {
+
+                const countContext = useContext(CountContext)
+
+
+                return (
+
+                    <div>
+
+                        ComponentF
+
+
+                        <button onClick={() => countContext.countDispatch('increment')}>Increment</button>
+                        <button onClick={() => countContext.countDispatch('decrement')}>Decrement</button>
+                        <button onClick={() => countContext.countDispatch('reset')}>Reset</button>
+
+
+                    </div>
+                );
+            }
+
+            export default ComponentF;
+
+
+    Example 5 - (part 1) fetching data with use Reducer (Requires internet) and axios
+
+
+    Example 6 - (part 2) fetching data with use Reducer (Requires internet) and axios 
+
+
+    Example 7 - useState vs use Reducer (When to use each)
+
+            Scenario                       useState                     useReducer 
+
+        1   Type of state               Number, string, Boolean         Object or Array  
+
+        2   No. of state                  one or two                      Too many 
+            transitions         
+
+        3   Related state                    No                              Yes 
+            transitions?
+
+        4   Business logic                No business logic             Complex business logic
+
+        5   Local vs Global                Local                           Global 
+
+
+5) Callback Hook
+
+     side note - to only render a specific component in a parent component,
+     we wrap the export line of cond with react.memo
+
+     e.g ..... 
+         .... codes... 
+
+         export default React.memo(component name)
+
+
+    What is useCallback Hook 
+
+      is a hook tht will return a memoized version of the callback 
+      function that only changes if one of the dependencies has changed 
+
+    Why useCallback 
+
+      is useful when passing callbacks to optimized child components that rely on reference equality
+      to prevent unnecessary renders
+
+
+    How do we us it? 
+
+        import in parent component 
+
+
+        then call 
+
+            const aFunction name = useCallback(() => {
+
+                some code
+            },[dependancy])
+
+    
+6) Memo Hook
+
+    
+    similar to callback  but is used to avoid unnecessary renders 
+
+    first we import 
+
+    then we use it just like callback and add it to the function we want 
+
+    if you need to cache function use callback 
+    if you need to cache result of a function use memo 
+
+    Example - memo 
+
+        import { useState, useMemo } from "react";
+
+        const MemoHookCounter = () => {
+
+
+            const [counterOne, setCounterOne] = useState(0)
+            const [counterTwo, setCounterTwo] = useState(0)
+
+            const incrementOne = () => {
+
+                setCounterOne(counterOne + 1)
+            }
+
+            const incrementTwo = () => {
+
+                setCounterTwo(counterTwo + 1)
+            }
+
+
+
+
+            const isEven = useMemo(() => {
+
+                let i = 0
+
+                while (i < 2000000000) i++
+
+                return counterOne % 2 === 0
+            }, [counterOne])
+
+
+            return (
+
+                <div>
+
+                    <div>
+                        <button onClick={incrementOne}>Count One - {counterOne}</button>
+                        <span>{isEven ? 'Even' : 'Odd'}</span>
+                    </div>
+
+                    <div>
+                        <button onClick={incrementTwo}>Count Two - {counterTwo}</button>
+
+
+                    </div>
+
+
+
+                </div>
+            );
+        }
+
+        export default MemoHookCounter;
+
+
+7) Ref Hook 
+
+    used to access dom nodes directly in functional components
+   
+
+   example 1 - used as dom access
+
+
+        import { useEffect, useRef } from "react";
+
+
+        const FocusInput = () => {
+
+            const inputRef = useRef(null)
+
+            useEffect(() => {
+
+                //focus input 
+
+                inputRef.current.focus()
+
+
+            }, [])
+
+
+            return (
+
+                <div>
+
+                    <input ref={inputRef} type="text" />
+
+                </div>
+            );
+        }
+
+        export default FocusInput; 
+
+
+   example 2 - used to store an imutable value(inaccessible value)
+
+        import { useState, useEffect, useRef } from "react";
+
+        const HookTimer = () => {
+
+            const [timer, setTimer] = useState(0)
+
+            const intervalRef = useRef()
+
+            useEffect(() => {
+
+                intervalRef.current = setInterval(() => {
+
+                    setTimer(prevTimer => prevTimer + 1)
+                }, 1000)
+
+                return () => {
+
+                    clearInterval(intervalRef.current)
+                };
+
+            }, [])
+
+
+            return (
+
+                <div>
+
+                    Hook Timer - {timer}
+
+                    <button onClick={() => clearInterval(intervalRef.current)}>Clear interval </button>
+
+                </div>
+            );
+        }
+
+        export default HookTimer;
+
+
+8) Custom Hooks
+
+   a java script function whose name starts with "use" 
+
+   can also call other hooks 
+
+   Why? 
+
+   to share logic with components 
+
+
+   Example 1 - useDocumentTitle 
+
+        a file that does the same thing 
+
+
+                import { useState } from "react";
+            import useDocTitle from "./useDocTitle";
+
+
+            const DocTitleOne = () => {
+
+
+                const [count, setCount] = useState(0)
+
+                useDocTitle(count)
+
+
+
+                return (
+
+                    <div>
+
+                        <button onClick={() => setCount(count + 1)}>Count - {count}</button>
+
+                    </div>
+                );
+            }
+
+            export default DocTitleOne;
+
+
+        custom hook that handles the above
+
+
+            import { useState, useEffect } from "react";
+
+
+            const useDocTitle = (count) => {
+
+
+                useEffect(() => {
+
+                    document.title = `Count ${count}`
+
+                }, [count])
+
+                return (
+
+
+                    <div>
+
+                    </div>
+                );
+            }
+
+             export default useDocTitle;
+
+
+   Example 2 - ----
+
+
+   Example 3 - ----
+
+
+Rare hooks not usually used 
+
+   - UseimperativeHandle 
+   - UseLayoutEffect
+   - UseDebugValue 
+
+    

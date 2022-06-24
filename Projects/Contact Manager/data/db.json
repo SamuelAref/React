@@ -1,0 +1,136 @@
+{
+  "Contact": [
+    {
+      "firstName": "Samuel",
+      "lastName": "Arefeaynie",
+      "mob": "+657889876",
+      "tel": "+3339339383",
+      "emailOne": "samuelarefeaynie2@gmail",
+      "emailTwo": "sazewdie10@gmail",
+      "addressOne": "Summit, Addis Ababa",
+      "addressTwo": "Nigeria",
+      "id": 1
+    },
+    {
+      "firstName": "Random",
+      "lastName": "Name",
+      "mob": "+657889876",
+      "tel": "+3339339383",
+      "emailOne": "samuelarefeaynie2@gmail",
+      "emailTwo": "sazewdie10@gmail",
+      "addressOne": "Summit, Addis Ababa",
+      "addressTwo": "Nigeria",
+      "id": 2
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "mob": "+657889876",
+      "tel": "+3339339383",
+      "emailOne": "samuelarefeaynie2@gmail",
+      "emailTwo": "sazewdie10@gmail",
+      "addressOne": "Summit, Addis Ababa",
+      "addressTwo": "Nigeria",
+      "id": 4
+    },
+    {
+      "firstName": "samuel",
+      "lastName": "arefeaynie",
+      "mob": "+657889876",
+      "tel": "+3339339383",
+      "emailOne": "samuelarefeaynie2@gmail",
+      "emailTwo": "sazewdie10@gmail",
+      "addressOne": "Summit, Addis Ababa",
+      "addressTwo": "Nigeria",
+      "id": 7
+    },
+    {
+      "firstName": "Random",
+      "lastName": "Name",
+      "mob": "3456",
+      "tel": "unspecified",
+      "emailOne": "unspecified",
+      "emailTwo": "unspecified",
+      "addressOne": "unspecified",
+      "addressTwo": "unspecified",
+      "id": 8
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "mob": "4445545",
+      "tel": "unspecified",
+      "emailOne": "unspecified",
+      "emailTwo": "unspecified",
+      "addressOne": "unspecified",
+      "addressTwo": "unspecified",
+      "id": 9
+    },
+    {
+      "firstName": "Samuel",
+      "lastName": "Arefeaynie",
+      "mob": "839485394853",
+      "tel": "unspecified",
+      "emailOne": "unspecified",
+      "emailTwo": "unspecified",
+      "addressOne": "unspecified",
+      "addressTwo": "unspecified",
+      "id": 10
+    },
+    {
+      "firstName": "Random",
+      "lastName": "Name",
+      "mob": "12356788",
+      "tel": "unspecified",
+      "emailOne": "unspecified",
+      "emailTwo": "unspecified",
+      "addressOne": "unspecified",
+      "addressTwo": "unspecified",
+      "id": 11
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "mob": "212121",
+      "tel": "unspecified",
+      "emailOne": "unspecified",
+      "emailTwo": "unspecified",
+      "addressOne": "unspecified",
+      "addressTwo": "unspecified",
+      "id": 12
+    },
+    {
+      "firstName": "Samuel",
+      "lastName": "Arefeaynie",
+      "mob": "0988777",
+      "tel": "unspecified",
+      "emailOne": "unspecified",
+      "emailTwo": "unspecified",
+      "addressOne": "unspecified",
+      "addressTwo": "unspecified",
+      "id": 13
+    },
+    {
+      "firstName": "Random",
+      "lastName": "Name",
+      "mob": "736373",
+      "tel": "unspecified",
+      "emailOne": "unspecified",
+      "emailTwo": "unspecified",
+      "addressOne": "unspecified",
+      "addressTwo": "unspecified",
+      "id": 14
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "mob": "4444",
+      "tel": "unspecified",
+      "emailOne": "unspecified",
+      "emailTwo": "unspecified",
+      "addressOne": "unspecified",
+      "addressTwo": "unspecified",
+      "id": 15
+    }
+  ]
+}

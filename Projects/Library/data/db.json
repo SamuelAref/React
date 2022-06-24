@@ -1,0 +1,116 @@
+{
+  "books": [
+    {
+      "title": "Title1",
+      "author": "Author1",
+      "published": "01/02/04",
+      "image": "images/book1.png",
+      "description": "The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs",
+      "id": 1
+    },
+    {
+      "title": "Title2",
+      "author": "Author2",
+      "published": "01/02/04",
+      "image": "images/book2.jpeg",
+      "description": "The quick brown fox jumps over the lazy dogs",
+      "id": 2
+    },
+    {
+      "title": "Title3",
+      "author": "Author3",
+      "published": "01/02/04",
+      "image": "images/book3.jpeg",
+      "description": "The quick brown fox jumps over the lazy dogs",
+      "id": 3
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book4.jpeg",
+      "description": "No Description Available",
+      "id": 4
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book5.jpeg",
+      "description": "No Description Available",
+      "id": 5
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book6.jpeg",
+      "description": "No Description Available",
+      "id": 6
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book7.jpeg",
+      "description": "No Description Available",
+      "id": 7
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book8.jpeg",
+      "description": "No Description Available",
+      "id": 8
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book9.jpeg",
+      "description": "No Description Available",
+      "id": 9
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book10.jpeg",
+      "description": "No Description Available",
+      "id": 10
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book11.jpeg",
+      "description": "No Description Available",
+      "id": 11
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book12.jpeg",
+      "description": "No Description Available",
+      "id": 12
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book13.jpeg",
+      "description": "No Description Available",
+      "id": 13
+    },
+    {
+      "title": "Title",
+      "author": "Author",
+      "published": "",
+      "image": "images/book14.jpeg",
+      "description": "No Description Available",
+      "id": 14
+    }
+  ]
+}
