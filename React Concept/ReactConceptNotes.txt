@@ -1,0 +1,186 @@
+
+React JS Explained in 10 minutes 
+
+    What is React 
+
+        - React is a javascript library that is used to build User Interfaces 
+        - Supplies tools to build UI's 
+        - much faster and easier 
+
+
+        SPA's (Single Page Applications)
+
+            - uses a single template and keep modifying the template to make it seem like we have other pages 
+
+        Components 
+            - Visual layer of the UI
+            - js class or function 
+
+        JSX  (javascript xml)
+
+            - gives added functionality 
+            - similar to html 
+            - class and event handlers are different 
+
+        React Router (URL Router)
+
+            - allows to have multiple templates in a single page 
+
+        Props
+
+            - passes data from one Component to another
+
+
+        State (use state )
+
+            - js object used to represent information about a component  
+
+        Component life cycle (use effect)
+
+            - 3 phases 
+
+                Mounting - when added to dom
+                updating - modifying 
+                unmounting - when removed from dom 
+
+        Hooks 
+
+            - only apply to functional component 
+            - let us add state and other features 
+            - manage state ()
+
+        State Management 
+            - global states 
+
+        Virtual DOM 
+            - only updating places where there are changes 
+
+        Key prop 
+
+            - contain key 
+
+        Event handlers 
+             
+             - camelcase and pass in the function directly 
+
+        Forms 
+
+             - add in event handlers whenever these change 
+
+        Conditional rendering 
+
+            - && ||
+
+        Commands 
+
+            - npx create-react-apply - creates react project 
+            - npm start  - starts up dev server 
+            - npm run build  - builds directory for production 
+
+What is ReactJS -- ReactJS Basics 
+
+    What is React?
+
+        - is a js library fo rbuilding fast and interactive user interfaces for the web as well as mobile applications.
+        - It is an open-source, reusable component-based front-end library 
+        - In a model view controller architecture, React is the 'View' which is responsible for how the app looks and feels 
+        - React was created by Jordan Walke, who was a software engineer at Facebook 
+
+    Why React?
+
+        - Easy creation of dynamic web apps 
+        - Performance enhancements 
+        - Reusable Components
+        - Unidirectional data flow 
+        - small learning curve 
+        - can be used for mobile apps 
+        - Dedicated tools for debugging
+
+    Features of React
+
+        - JSX
+            - is a syntax extension to js. Itis used with react to describe what the ui should look like 
+            - By using jsx, you can write HTML structures in the same file that contains js code 
+            - JSX helps in making the code easier to understand and debug as it avoids usage of js DOM structures which are rather complex 
+            - jsx = js + html 
+
+        - Virtual DOM
+            - represents the copy of the real DOM 
+            - modifying real DOM is slower than virtual DOM 
+
+        - Performance 
+            - faster since components and virtual DOM is used 
+
+        - One way data binding 
+            - keeps data fast and modular 
+
+        - Extensions 
+            - has various extensions (native, flux)
+
+        - Debugging 
+            - easy to debug 
+
+        - Components, State & Props 
+
+            - components 
+
+                    - building blocks 
+                    - each component is gathered to make a bigger thing 
+                    - reusable 
+
+            - state 
+
+                    - state of component is holder of data 
+                    - if it changes it changes the state 
+
+            - props 
+
+                    - allow us to pass arguments 
+
+    React Pre-requisites 
+
+        - familiar with programming concepts (functions, objects, arrays, and classes )
+        - js 
+        - html 
+
+    Industry Trends
+
+        - more money 
+        - popular 
+
+What is React (React js) & Why is it so popular 
+
+    - is a js library for building fast uI 
+    - developed in 2011
+    - Components - root component 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

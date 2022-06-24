@@ -1,0 +1,807 @@
+Complete React Tutorial (& Redux) 
+
+        Tutorial #1 - Introduction 
+
+            What is React? 
+
+                - JavaScript library created by Facebook
+                - Also used by Netflix & Instagram
+                - Used to create JS-driven dynamic web apps
+                - In that regard, can be compared to Angular & Vue
+
+            What is Redux? 
+
+                - A layer on-top of React
+                - Helps with state management of our app 
+                    - data in the app
+                    - UI state of the app 
+
+            What we'll cover 
+
+                - React basics
+                    - components, events, templates, props & forms 
+
+                - React Router 
+                    - routes, route parameters, redirects
+
+                - Redux 
+                    - stores, actions & reducers
+
+        Tutorial #2 - How React Works? 
+
+                - Components, components, Components!
+                - creates a js representation(virtual dom) then creates an actual dom
+                - react compares the virtual doma and actual dom and updates the changed parts 
+
+                    components & Templates 
+                        - components look like html templates (actually JSX)
+                        - They can contain 'state' (data or UI state)
+                        - They also can contain javascript for functionality 
+
+        Tutorial #3 - React Setup (with CDN)
+
+                - 2 ways 
+                    - create react app and react controls most of react 
+                    - CDN links  
+
+                - Extensions we use 
+                     - ES7+ React/Redux/React snippets
+
+        Tutorial #4 - React Components
+
+            - so to render jsx component to any html file we can use script like 
+
+                    <script>
+
+                        class App extends React.Component{
+
+                            render(){
+
+                                return (
+
+                                    <div className="app-content">
+
+                                        <h1> Hey, ninjas</h1>
+                                        <p>{ Math.random() * 10}</p> 
+
+                                    </div>
+                                )
+                            }
+                        }
+
+                        ReactDOM.render(<App/>, document.getElementById("app"));
+                    </script>
+
+            - now, inorder for the browser to recognize the jsx into html, we need babel so we copy a script from the website and add it to our html file
+
+                <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+
+                then add type="text/babel" to our current script being rendered like 
+
+                            <script type="text/babel">
+
+                                class App extends React.Component{
+
+                                    render(){
+
+                                        return (
+
+                                            <div className="app-content">
+
+                                                <h1> Hey, ninjas</h1>
+                                                <p>{ Math.random() * 10}</p> 
+
+                                            </div>
+                                        )
+                                    }
+                                }
+
+                                ReactDOM.render(<App/>, document.getElementById("app"));
+                            </script>
+
+        Tutorial #5 - State 
+
+                Component State 
+                    - JavaScript Object 
+                    - Describes the current state of the component 
+                        - data, UI-state 
+                    - The state of a component can be updated over time 
+                        - a modal could close
+                        - the data we output could change 
+
+                    so in our script and class which extends from react component, we can add an object that will be renederd dynamically 
+                            
+                            <script type="text/babel">
+
+                                class App extends React.Component{
+
+                                    state = {
+
+                                        name : 'Sam',
+                                        age: 24
+                                    }
+
+                                    render(){
+
+                                        return (
+
+                                            <div className="app-content">
+
+                                                <h1> Hey, ninjas</h1>
+                                                <p>My name is :{this.state.name } and I am {this.state.age}</p>  // here we use "this" just like any classes in javascript to access a class' object
+
+                                            </div>
+                                        )
+                                    }
+                                }
+
+                                ReactDOM.render(<App/>, document.getElementById("app"));
+                            </script>
+
+        Tutorial #6 - React Dev Tools
+
+                there is a react developer tools extenson for chrome 
+
+                - this helps us in development and to keep track of states and props in our projects 
+
+        Tutorial #7 - DOM Events 
+
+
+                functions handlers
+
+                         handleClick(e){
+
+                            console.log(e.target);
+
+                            
+                        }
+
+                        handleCopy(e){
+
+                            console.log('Try being original for once!');
+                        }
+
+                function invokers  // don't forget "this" in rendering a class function 
+
+                        <button onClick={this.handleClick}>Click Me</button>
+                        <p onCopy={this.handleCopy}>We Copy</p>
+
+        Tutorial #8 - Changing State (and 'this')
+
+            use arrow functions to output states inside the class 
+            other wise outputting values inside a class won't usually work 
+
+            - and also we use setState to change the state of an object/variable
+
+                    handleClick = (e) =>{
+
+                        console.log(e.target);
+                        this.setState({
+
+                            name:'Suii'
+                    })
+
+        Tutorial #9 - Intro to Forms 
+
+                 handleChange = (e) =>{
+
+                        this.setState({
+
+                            name:e.target.value
+                        })
+
+                    }
+
+                handleSub = (e) => {
+
+                    e.preventDefault();
+                    console.log("form submitted", this.state.name);
+
+                }
+
+                 <form onSubmit={this.handleSub}>
+                            
+                    <input onChange={this.handleChange} type="text"/>
+                    <button >Submit</button>
+
+                </form>
+
+        Tutorial #10 - Create React App 
+
+            - A command line tool to create React apps 
+                - Development server 
+                - Use ES6 features which are not normally supported
+                - Keep our code modular
+                - Use build tools to create optimized code 
+
+            - create a react app by using the terminal and npm 
+                - npx create-react-app appName
+
+        Tutorial #11 - Single Page Apps 
+
+                - React apps are typically SPA'script
+                - Only ever one HTML page sered to the browser 
+                - React then controls what a user sees on that page 
+
+                - we scanned the folder setup 
+                    - we have node folder for our dependencies
+                    - public folder for images and stuff
+                    - src folder where the magic happens
+                    - json files for manipulating our packages and installing 
+
+        Tutorial #12 - Nesting Components 
+
+                    App.js root component  
+                |                           |
+            Navbar.js                   ContactForm.js
+
+
+            Ninjas.js file (class component)
+
+                    //class based component 
+
+                import React, {Component} from 'react';
+
+                class Ninjas extends Component{
+
+                    render(){
+
+                        return(
+
+                            <div className="ninja">
+
+                                    <div>Name: Sam</div>
+                                    <div>Age : 30</div>
+                                    <div>Belt : Black</div>
+                            </div>
+                        )
+                    }
+                }
+
+
+                export default Ninjas;
+
+            App.js nested 
+
+                <div className="App">
+
+                    <h2>Hello from react</h2>
+                    <Ninjas/>
+
+                </div>
+
+        Tutorial #13 - Props
+
+                pass data from parent to child 
+
+                in a class component we use props a little differently than functional components 
+                     render(){
+
+                        console.log(this.props); // here is where we import props
+
+                        return(
+
+                            <div className="ninja">
+
+                                    <div>Name: {this.props.name}</div>
+                                    <div>Age : {this.props.age}</div>
+                                    <div>Belt : {this.props.belt}</div>
+                            </div>
+                        )
+                    }
+
+        Tutorial #14 - Outputting Lists 
+
+                in outputting a list in class based , we will render the listed item itself from our iterated variable
+
+                      const ninjaList = ninjas.map(ninja => {
+
+
+                        return (
+
+                            <div className="ninja" key={ninja.id}>
+
+                            <div>Name: {ninja.name}</div>
+                            <div>Age : {ninja.age}</div>
+                            <div>Belt : {ninja.belt}</div>
+                            
+                                </div>
+
+
+                        )
+                    })
+
+                    return(
+
+                        <div className="ninja-list">
+
+                            {ninjaList}
+
+                        </div>
+                    
+                    )
+
+        Tutorial #15 - Stateless Components 
+
+            Container components
+                - contain state 
+                - contain lifecycle hooks
+                - Not concerened with uI 
+                - Use classes to create 
+
+            UI Components 
+                - Don't contain state 
+                - Receive data from props 
+                - Only concerned with UI 
+                - Use functions to create 
+
+            Here we just converted our Ninjas.js from class  component into a functional component
+
+        Tutorial #16 - Conditional Output
+
+                we can use if, ternary operator or filter to conditionally output something 
+
+                    
+                    const Ninjas = ({ninjas}) =>{
+
+                        
+
+                            return(
+
+                                <div className="ninjaList">
+
+                                { ninjas.filter(ninja =>  {return ninja.age > 20}).map(ninja =>{
+
+                                    return (
+                                    <div className="ninja" key={ninja.id}>
+
+                                        
+                                    <div>Name: {ninja.name}</div>
+                                    <div>Age : {ninja.age}</div>
+                                    <div>Belt : {ninja.belt}</div>
+                                    
+                                    </div>
+
+
+                                )})
+                                }
+
+                                </div>
+                            
+                            )
+                        }
+
+        Tutorial #17 - Forms Revisited 
+
+                just the basics of forms but a little cheeky move on handleChange function to access the corresponding values of an object 
+
+                        AddNinjas.js file 
+
+                            class AddNinja extends Component {
+
+                                state = {
+
+                                    name: null,
+                                    age: null,
+                                    belt: null
+                                }
+
+                                handleChange = (e) =>{
+
+
+                                        this.setState({
+
+                                            [e.target.id] : e.target.value
+
+                                        })
+                                        console.log(this.state[e.target.id]);
+
+                                }
+
+                                handleSubmit = (e) =>{
+
+                                    e.preventDefault();
+                                    console.log(this.state);
+                                }
+
+                                render(){
+
+
+                                    return (
+
+                                        <div>
+
+                                            <form onSubmit={this.handleSubmit}>
+
+                                                <label htmlFor="name">Name:</label>
+                                                <input type="text" id="name" onChange={(e) => this.handleChange(e)}/>
+
+                                                <label htmlFor="age">Age:</label>
+                                                <input type="number" id="age" onChange={(e) => this.handleChange(e)} />
+
+                                                <label htmlFor="belt">Belt:</label>
+                                                <input type="text" id="belt" onChange={(e) => this.handleChange(e)} />
+
+                                                <button type="submit">Submit</button>
+                                            </form>
+
+                                        </div>
+
+
+                                    );
+                                }
+
+        Tutorial #18 - Functions as Props
+
+            just like object, variables or states we can pass functions also 
+
+                <AddNinja addNinja = {this.addNinja}/>
+
+        Tutorial #19 - Deleting Data 
+
+                  deleteNinja = (id) =>{
+    
+
+                    let ninjas = this.state.ninjas.filter(ninja => { return ninja.id !== id})
+                    this.setState({
+
+                    ninjas : ninjas
+                    })
+                }
+
+        Tutorial #20 - Recap & Virtual DOM 
+
+                    App.js container    
+                |                       |
+                | ninjas                | addNinja
+            Ninjas.js UI component      AddNinja.js contaner
+
+        Tutorial #21 - CSS Files 
+
+            way one - create css for each file 
+            way two - create a single css file and import it in the root jsx 
+
+        Tutorial #22 - Lifecycle Methods 
+
+            we can find a diagram at 
+                    https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+
+            so the methods to check components 
+
+                    componentDidMount(){
+
+                        console.log('component mounted');
+                    }
+
+                    componentDidUpdate(prevProps, prevState){
+
+                        console.log('component updated');
+                        console.log(prevProps);
+                        console.log(prevState);
+
+
+                    }
+
+        Tutorial #23 - Todo App (part 1)
+
+                - this is just a basic todo app the only difference is that we used class components on components that change state and functional components on ui rendering 
+                - the other difference i saw is that if the key and value of an object are the same we can just state a single name not both 
+
+                      deleteTodo = (id) => {
+
+                            const todos = this.state.todos.filter(todo => { return todo.id !== id})
+                            this.setState({ // since the key and value have the same name we can just put one name
+
+                            todos    // instead of saying todos : todos, we just said todos 
+                            })
+
+
+                        }
+
+        Tutorial #24 - Todo App (part 2)
+
+                everything is pretty basic but don't forget 2 things 
+
+                    - 1 - always use state checking like  this to keep track and send data to anywhere we want 
+                             
+                              state = {
+
+                                    content : ''
+
+                              }
+                    - 2 - use states to relate most things with eachother, like clearing inputs after submittin 
+
+        Tutorial #25 - React Router 
+
+                So, here we created various pages and linked them using react router 
+
+                - to install we used the npm command npm react-router-dom
+                - but use version 5 for commonality it uses Switch and Links lelaw it's same 
+
+        Tutorial #26 - Links & NavLinks 
+                - Links as you know can replace anchor tags in react for quick rendering of Components
+                - NavLinks just add an "active" class to the pages class nothing major 
+
+        Tutorial #27 - Programmatic Redirects 
+
+            import {useHistory} from "react-router-dom"; 
+
+                history.push('/contact');
+
+        Tutorial #28 - HOC (Higher Order Components)
+
+            Component  => HOC => SuperCharged Components
+
+            The example he gave didn't work i'm not sure why but read about it further if you want (Higer order components in react) 
+
+        Tutorial #29 - Using Axios
+
+                https://jsonplaceholder.typicode.com/ for dummy data
+
+                - then we install axios 
+                    npm install axios 
+                - then we use our home.js file to fetch with axios but we will need the component did mount method to do this.
+                - so, we convert our sfc to a class component 
+
+                - then we used component did mount, but we don't have to use this, it's just formality for class based components 
+
+
+                    Home.js file 
+
+                        import React, {Component} from 'react';
+                        import axios from 'axios'
+
+                        class Home extends Component {
+
+                            state = {
+
+                            posts : []
+                            }
+
+                        componentDidMount(){
+
+                            axios.get('https://jsonplaceholder.typicode.com/posts')
+                            .then(res => {
+
+                                this.setState({
+
+                                    posts : res.data.slice(0, 10)
+                                })
+                            })
+
+                        }
+
+                        render(){
+
+                            const { posts } = this.state
+                            const postList = posts.length ? (
+
+                                posts.map(post =>{
+
+                                    return (
+
+                                        <div className="post card" key={post.id}>
+
+                                                <div className="card-content">
+
+                                                    <span className="card-title">{post.title}</span>
+                                                    <p>{post.body}</p>
+
+                                                </div>
+
+                                        </div>
+                                    )
+                                })
+                            ) : (
+
+                                <div className="center">No Posts yet</div>
+                            )
+
+                        return ( 
+
+                            <div className="container">
+
+                                <h4 className="center">Home</h4>
+                                {postList}
+                            </div>
+
+
+                        )
+
+                        }
+
+                    }
+
+        Tutorial #30 - Route Parameters (part 1)
+
+            - Part of a URL that can change 
+            - Usually see them on URLs for individual records 
+
+            User Profile Route : 
+
+                site.com/users/userName1
+                site.com/users/userName2
+
+        Tutorial #34 - Intro to Redux 
+
+            - Central data store for all app data 
+            - Any component can access data from it 
+            - Makes state management easy 
+
+            to get data component => Redux(Central Data Store)
+            to change data Component => Dispatch Action(data, newData) => Reducer => Redux(change data)
+
+        Tutorial #35 - Redux Stores  (we learned on code pen)
+
+            we import the redux store 
+
+            then we create a store 
+
+            const {createStore} = Redux;
+
+            const initState = {
+
+                todo: [],
+                posts : []
+            }
+
+            function myReducer(state = initState, action ){
+
+
+            }
+
+
+            const store = createStore(myReducer);
+
+        Tutorial #36 - Redux Actions 
+
+            - so here, we create an action and dispatch it to our reducer 
+
+
+                       const {createStore} = Redux;
+
+                        const initState = {
+
+                            todo: [],
+                            posts : []
+                        }
+
+                        function myReducer(state = initState, action ){
+
+                                console.log(action, state);
+
+                        }
+
+
+                        const store = createStore(myReducer);
+
+
+                        const todoAction = {type: 'ADD_TODO', todo: 'buy milk'}
+
+                        store.dispatch(todoAction)
+
+        Tutorial #37 - Redux Reducers 
+
+                After passing an action we can change the state by creating a new copy and adding to that enji we shouldn't touch the original state 
+
+                               const {createStore} = Redux;
+
+                        const initState = {
+
+                            todo: [],
+                            posts : []
+                        }
+
+                        function myReducer(state = initState, action ){
+
+                                if(action.type == 'ADD_TODO'){
+
+                                    return {
+
+                                        todos : [...state.todos, action.todo];
+                                    }
+                                }
+
+                        }
+
+
+                        const store = createStore(myReducer);
+
+
+                        const todoAction = {type: 'ADD_TODO', todo: 'buy milk'}
+
+                        store.dispatch(todoAction)
+
+        Tutorial #38 - Store Subscriptions
+
+                after making changes , we need to subscribe to those changes made 
+                and also we use the spread operator to include other states along side it 
+
+
+                    
+                               const {createStore} = Redux;
+
+                                const initState = {
+
+                                    todo: [],
+                                    posts : []
+                                }
+
+                                function myReducer(state = initState, action ){
+
+                                        if(action.type == 'ADD_TODO'){
+
+                                            return {
+
+                                                ...state,
+                                                todos : [...state.todos, action.todo];
+                                            }
+                                        }
+
+                                        if(action.type == 'ADD_POST'){
+
+                                            return {
+
+                                                ...state,
+                                                posts : [...state.posts, action.post];
+                                            }
+                                        }
+
+                                }
+
+
+                                const store = createStore(myReducer);
+
+                                store.subscribe(() =>{
+
+                                        console.log(store.getState());
+
+                                })
+                                store.dispatch({type: 'ADD_TODO', todo: 'buy milk'});
+                                store.dispatch({type: 'ADD_TODO', todo: 'Sleep'});
+                                store.dispatch({type: 'ADD_POST', post: 'egg hunt '});
+
+        Tutorial #39 - Setting up Redux 
+
+                in our projects we install 
+                    - redux by npm install redux
+                    - react redux by npm install react-redux 
+                    - or npm install redux react-redux 
+
+                    - best place to import is in index.js file 
+
+                    index.js file 
+                        import {createStore} from 'redux';
+                        import {Provider} from 'react-redux';
+                        import rootReducer from './reducers/rootReducer';
+
+                        const store = createStore(rootReducer);
+
+                        <Provider store={store}><App /></Provider>
+                    
+                    rootReducer.js file 
+
+                        const initState = {
+
+                            posts : []
+                        }
+
+                        const rootReducer = (state = initState, action) =>{
+
+
+                            return state;
+
+                        }
+
+                        export default rootReducer;
+
+        Tutorial #40 - Mapping State to Props
+
+
+
+
+
+
+
+
