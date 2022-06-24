@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+.Home{
+
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 687px;
+  background-image: url('images/Alps.jpg');
+  background-size: cover;
+}
+
+.Home .content-container{
+
+  /* border: 1px black solid; */
+  width: 65%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:rgba(94, 38, 73, 0.549) ;
+  border: 1px #f1ec8465 solid;
+}
+
+.content-container .inputs {
+
+  /* border: 1px black solid; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 0 0 30px 0;
+  width: 90% ;
+  height: 7%;
+}
+
+.content-container .inputs input{
+
+  width: 55%;
+  margin: 0 15px 0 5px;
+  background-color:#E96B53 ;
+  color: #F1EC84;
+  border: 1px #f1ec8465 solid;
+
+}
+
+.content-container .inputs input::placeholder{
+
+    color: #F1EC84;
+  border: 1px #f1ec8465 solid;
+
+}
+
+
+.content-container .inputs button{
+
+  width: 10%;
+  height: 65%;
+  margin: 0 40px 0 0;
+  font-size: 90%;
+  align-content: center;
+  background-color:#E96B53 ;
+  color: #F1EC84; 
+  border: 1px #f1ec8465 solid;
+  
+
+}
+
+.content-container .inputs button:hover, select:hover{
+
+  cursor: pointer;
+}
+
+.content-container .inputs select{
+
+  width: 16%;
+  height: 60%;
+  background-color:#E96B53 ;
+  color: #F1EC84;
+  border: 1px #f1ec8465 solid;
+
+
+
+}
+
+.content-container .outputs{
+
+  
+  border: 1px #f1ec8465 solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  height: 70%;
+  background-color:#285165a6 ;
+
+}
+
+.content-container .outputs ol{
+
+  /* border: 1px black solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 90%;
+  width: 92%;
+  overflow-y: scroll;
+  
+}
+
+.content-container .outputs ol li{
+
+  margin: 0 0 5px -15px;
+  color: white;
+  
+}
+
+.cross{
+
+  text-decoration: line-through;
+}
+
+.uncross{
+
+  text-decoration: none;
+}
