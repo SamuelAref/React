@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  font-family: 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  width: 100%;
+  /* height: 100%; */
+}
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+.landing-page{
+
+  display: flex;
+  flex-direction: column;
+  /* border: 1px black solid; */
+  justify-content: flex-start;
+  align-items: flex-end;
+  background: url('../public/images/landing.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 695px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #EF2C45;
+
+}
+
+.landing-page h2{
+
+  /* border: 1px black solid; */
+  font-size: 16vw;
+  width: auto;
+  /* font-size-adjust: initial; */
+  font-family: inherit;
+  margin: 0 0 0 0 ;
+  font-weight: 400;
+}
+
+.landing-page h3{
+
+  /* border: 1px solid black; */
+  margin: 0 150px 0 0;
+  font-size: 3vw;
+  font-family:inherit ;
+
+
+}
+
+.landing-page h4{
+
+  /* border: 1px solid black; */
+  margin: 0 35px 0 0;
+  font-size: 3vw;
+  font-family: inherit;
+
+
+}
+
+
+.landing-page h5{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 25%;
+  margin: 70px 150px 0 0;
+  font-size: 2vw;
+  font-family: inherit;
+  border-radius: 40px;
+  background-color: #EF2C45;
+  color: white;
+
+
+}
+
+
+.output{
+
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 695px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #EF2C45;
+
+}
+
+.output .options{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px black solid;
+  margin: 0 0 -13px 0;
+  width: 60%;
+  height: 5%;
+  z-index: 3;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.output .options button{
+
+  border: none;
+  background: none;
+  color: #EF2C45;
+  font-size: 1.5vw;
+
+}
+
+.output .options button:hover{
+
+  cursor: pointer;
+  background-color: #EF2C45;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.output-container{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 80%;
+  height: 90%;
+  background: url('../public/images/dark.jpg');
+  background-size:100%;
+  background-position: 40%;
+  border: 1px solid yellow;
+
+}
+
+.breakFast {
+
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  /* border: #EF2C45 1px solid; */
+  width: 90%;
+  height: 96%;
+  margin-top: 10px;
+  /* overflow: auto; */
+  font-size: 1.2vw;
+
+}
+
+.lunch{
+
+  border: #bbef2c 1px solid;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  width: 90%;
+  height: 96%;
+  margin-top: 10px;
+
+
+}
+
+.dinner{
+
+  border: #2cb8ef 1px solid;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  width: 90%;
+  height: 96%;
+  margin-top: 10px;
+
+}
+
+.baking{
+
+  border: #e82cef 1px solid;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  width: 90%;
+  height: 96%;
+  margin-top: 10px;
+
+}
+
+.output-container .card{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width : 50%;
+  height: 80%;
+  margin: 15px 0 0 40px;
+  transition: all 0.5s linear;
+
+}
+
+.output-container .card:hover{
+
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.output-container .card .im{
+
+  width: 100%;
+  height: 30%;
+
+}
+
+.output-container .card .ingredient{
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* border:  0.2px white solid; */
+  width: 100%;
+  height: 70%;
+  /* border-radius: 10px 10px 0 0; */
+  margin: 0 0 0 0;
+  background-color: rgba(239, 44, 70, 0.301);
+  color: white;
+
+}
+
+.output-container .card .ingredient h4{
+
+  margin: 0 0 -10px 0;
+  /* border: 1px black solid; */
+
+}
+
+.output-container .card .ingredient ol{
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  /* border: 1px black solid; */
+  height: 80%; 
+  width: 50%;
+  /* flex-wrap: wrap; */
+
+}
+
+.output-container .card .ingredient ol li{
+ 
+  /* display: flex; */
+  margin: 0 0 0 -20px;
+  /* border: 1px black solid; */
+  width: 130%;
+  font-size:1vw;
+  word-break: break-all;
+  height: auto;
+}
+
+
+
