@@ -1,0 +1,150 @@
+{
+
+
+    "book": [
+
+        {
+            "id":1,
+            "author": "Marian Keyes",
+            "title" : "Making It Up As I Go Along",
+            "description" : "Laugh your socks off with this hilarious collection of tales, observations and flights of fancy from the funniest woman in print, bestselling author Marian Keyes Welcome to the magnificent Making It Up as I Go Along - aka the World According to Marian Keyes™ - A bold and brilliant collection of Marian's hilarious and often heartfelt observations on modern life, love and everything in between. From a guide to breaking up with your hairdresser to entering the fifties-zone, the joys of her nail varnish museum to singing her way through insomnia, Marian will have you laughing with delight and gasping with recognition throughout - because at the end of the day, each and every one of us is clearly making it up as we go along. 'Never far from barmy, always warm and real. But in the interstices of fun and frippery comes a sincere clarity. At times she is the darkest of light writers' Daily Telegraph 'Keyes manages to verbalize the most mundane of universal experiences and somehow make them funny . . .' Sunday Tribune 'A hilarious, sympathetic read' Hello! 'Packed with hilarious, sharp-eyed observations on life, love and everything else' Woman & Home 'Will make you laugh, cry and feel less alone. Fabulous' Good Housekeeping",
+            "genre" : "Humor"
+        },
+
+        {
+            "id":2,
+            "author": "Andy Weir",
+            "title" : "The Martian",
+            "description" : "Six days ago, astronaut Mark Watney became one of the first people to walk on Mars. Now, he's sure he'll be the first person to die there. After a dust storm nearly kills him and forces his crew to evacuate while thinking him dead, Mark finds himself stranded and completely alone with no way to even signal Earth that he’s alive - and even if he could get word out, his supplies would be gone long before a rescue could arrive. Chances are, though, he won't have time to starve to death. The damaged machinery, unforgiving environment, or plain old \"human error\" are much more likely to kill him first. But Mark isn't ready to give up yet. Drawing on his ingenuity, his engineering skills - and a relentless, dogged refusal to quit - he steadfastly confronts one seemingly insurmountable obstacle after the next. Will his resourcefulness be enough to overcome the impossible odds against him? Wil Wheaton, who has lent his voice to sci-fi blockbusters like Ready Player One and Redshirts, breathes new life (and plenty of sarcasm) into the iconic character of Mark Watney, making this edition a must-listen for both longtime fans of The Martian and new listeners alike.",
+            "genre" : "sci-fi"
+
+        },
+
+        {
+            "id":3,
+            "author": "Han Kang",
+            "title" : "The Vegetarian",
+            "description" : "A beautiful, unsettling novel in three acts about rebellion and taboo, violence and eroticism, and the twisting metamorphosis of a soul. Before the nightmares began, Yeong-hye and her husband lived an ordinary, controlled life. But the dreams - invasive images of blood and brutality - torture her, driving Yeong-hye to purge her mind and renounce eating meat altogether. It's a small act of independence, but it interrupts her marriage and sets into motion an increasingly grotesque chain of events at home. As her husband, brother-in-law, and sister all fight to reassert their control, Yeong-hye obsessively defends the choice that's become sacred to her. Soon their attempts turn desperate, subjecting first her mind and then her body to ever more intrusive and perverse violations, sending Yeong-hye spiraling into a dangerous, bizarre estrangement, not only from those closest to her, but also from herself. Celebrated by critics around the world, The Vegetarian is a darkly allegorical, Kafka-esque tale of power, obsession, and one woman's struggle to break free from the violence both without and within her. ",
+            "genre" : "fiction"
+
+        },
+
+        {
+            "id":4,
+            "author": "A.M. Khalifa",
+            "title" : "Terminal Rage",
+            "description" : "The audio production of Khalifa’s twisty thriller begins with a terrorist takeover of a Manhattan skyscraper and features a spirited reading by Brick. Former FBI agent Alex Blackwell initially sounds annoyed as he is dragged from retirement to handle a hostage situation in a New York City high-rise. His attitude shifts to that of a determined professional when Seth, the terrorist leader, demands a safe escape and a trade - the kidnapped daughter of an influential senator for the release of two bombers imprisoned in Egypt. Once the deal is struck and completed, Blackwell vows to hunt down Seth, and his quest is interrupted by chapters featuring Sam Morgan, a Southern California software developer who’s lured to a new job in New York City. The way the stories connect is clever and shocking. The plot hops around the globe, giving Brick’s international accents a workout - from credible Australian, Egyptian, and German accents. Brick’s clipped, precise performance makes the most of the surprising finale. The result is a totally satisfying audiobook.",
+            "genre" : "thriller"
+
+        },
+
+        {
+            "id":5,
+            "author": "Liv Hadden",
+            "title" : "In The Mind Of Revenge",
+            "description" : "Mine is a tale of pain, hate, lies, murder, injustice, vengeance, and love unreturned. My story began much like yours; a hopeful innocent born to a world of endless possibilities. But my journey has rarely been paved with opportunities of light. Confronted by those who sought to eclipse what light I had found, the darkness came for me. Wrapped in its intoxicating embrace, I have risen from the dead to reclaim my dignity and the life that was taken from me. I have begun my journey into the mind of revenge. Revenge for me. Revenge for those like me. Those who are shamed. This is a story for the shamed, by the shamed. The question is, are you ready for it? In the Mind of Revenge, book one of The Shamed Series, takes a deep look at how monsters are born. Set in a society that glorifies \"normal\" and demonizes different, this dark tale takes its listeners on an emotionally wild ride of vengeance, murder, pain and desperation. Though the listener is warned by its main character, Shame, not to develop an attachment, the first person narrative combined with Shame's uninhibited vulnerability makes it nearly impossible not to do so. Raw, vivid, honest, fast-paced and beautifully vulgar, In the Mind of Revenge is sure to have you emotionally twisted from beginning to end",
+            "genre" : "thriller"
+
+        },
+
+        {
+            "id":6,
+            "author": "SAMS Publisher",
+            "title" : "Crows Know Where Death Is",
+            "description" : "This book is full of thrilling tales that were written to keep children invested in the story. As your kid reads through these stories, their vocabulary will grow. Many of these chapters also reinforce the morals that you have already taught your little ones.The Book of Horror introduces you to the scariest movies ever made and examines what makes them so frightening.",
+            "genre" : "thriller"
+
+        },
+
+        {
+            "id":7,
+            "author": "Christopher Greyson",
+            "title" : "Jack Knifed",
+            "description" : "How far would you go to uncover the truth of your past? Jack felt the familiar burn of shame in his chest. Why do I keep doing this...thinking about her? It was so long ago, but I can't get what happened out of my head. I shouldn't let any of that junk define me, but I still do. I'm driving in circles, caught in some loop that I can't break out of. I want to know why she abandoned me...but some things, I guess, I'll never know... Handsome police officer Jack Stratton is the \"hometown hero cop with a heart of gold.\" Constant nightmares have forced him to seek answers about his rough childhood and the dark secrets hidden there. With Alice (aka Replacement) by his side, Jack travels to Hope Falls to solve a murder that occurred before he was born. Everyone in the small town remembers the unsolved murder of Steven Ritter, but after 27 years, no one thought that someone would look into it--but they don't know Jack. A heart-rending mystery-thriller about lost love, betrayal, and murder that will keep you on the edge of your seat.",
+            "genre" : "mystery"
+
+        },
+
+        {
+            "id":8,
+            "author": "Mick Bose",
+            "title" : "The Lost Sister",
+            "description" : "6 years ago, Detective Chief Inspector Arla Baker's sister Nicole disappeared... Arla never stopped searching. Today, a vicious killer stalks the same place where Nicole vanished. The killer sends Arla clues about Nicole. He or she knows intimate details about Nicole that no one knows but Arla. As another body appears, it’s clear that the killer is hungry for more blood. And Arla is not the one hunting this crazed psychopath. Arla is the hunted. As deep secrets of the past begin to unravel, so does Arla’s grip on reality.Can she face up to this vicious killer and slay the demons of her past ?",
+            "genre" : "sci-fi"
+
+        },
+
+        {
+            "id":9,
+            "author": "J.K. Rowling",
+            "title" : "Harry Potter and the Deathly Hallows",
+            "description" : "‘Give me Harry Potter,' said Voldemort's voice, 'and none shall be harmed. Give me Harry Potter, and I shall leave the school untouched. Give me Harry Potter, and you will be rewarded.' As he climbs into the sidecar of Hagrid's motorbike and takes to the skies, leaving Privet Drive for the last time, Harry Potter knows that Lord Voldemort and the Death Eaters are not far behind. The protective charm that has kept Harry safe until now is broken, but he cannot keep hiding. The Dark Lord is breathing fear into everything Harry loves and to stop him Harry will have to find and destroy the remaining Horcruxes. The final battle must begin - Harry must stand and face his enemy...Having become classics of our time, the Harry Potter stories never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new listeners.",
+            "genre" : "fiction"
+
+        },
+
+        {
+            "id":10,
+            "author": "J.K. Rowling",
+            "title" : "Harry Potter and the Order of the Phoenix",
+            "description" : "‘You are sharing the Dark Lord's thoughts and emotions. The Headmaster thinks it inadvisable for this to continue. He wishes me to teach you how to close your mind to the Dark Lord.'Dark times have come to Hogwarts. After the Dementors' attack on his cousin Dudley, Harry Potter knows that Voldemort will stop at nothing to find him. There are many who deny the Dark Lord's return, but Harry is not alone: a secret order gathers at Grimmauld Place to fight against the Dark forces. Harry must allow Professor Snape to teach him how to protect himself from Voldemort's savage assaults on his mind. But they are growing stronger by the day and Harry is running out of time...",
+            "genre" : "mystery"
+
+        },
+
+        {
+            "id":11,
+            "author": "Yuval Noah Harari",
+            "title" : "Sapiens",
+            "description" : "From a renowned historian comes a groundbreaking narrative of humanity's creation and evolution - a number one international best seller - that explores the ways in which biology and history have defined us and enhanced our understanding of what it means to be \"human\". One hundred thousand years ago, at least six different species of humans inhabited Earth. Yet today there is only one - Homo sapiens. What happened to the others? And what may happen to us? Most books about the history of humanity pursue either a historical or a biological approach, but Dr. Yuval Noah Harari breaks the mold with this highly original book that begins about 70,000 years ago, with the appearance of modern cognition. From examining the role evolving humans have played in the global ecosystem to charting the rise of empires, Sapiens integrates history and science to reconsider accepted narratives, connect past developments with contemporary concerns, and examine specific events within the context of larger ideas. Dr. Harari also compels us to look ahead, because, over the last few decades, humans have begun to bend laws of natural selection that have governed life for the past four billion years. We are acquiring the ability to design not only the world around us but also ourselves. Where is this leading us, and what do we want to become?",
+            "genre" : "non fiction"
+
+        },
+
+        {
+            "id":12,
+            "author": "Paul Kalanithi",
+            "title" : "When Breath Becomes Air",
+            "description" : "At the age of 36, on the verge of completing a decade's worth of training as a neurosurgeon, Paul Kalanithi was diagnosed with stage IV lung cancer. One day he was a doctor treating the dying, and the next he was a patient struggling to live. And just like that, the future he and his wife had imagined evaporated. When Breath Becomes Air chronicles Kalanithi's transformation from a naïve medical student \"possessed\", as he wrote, \"by the question of what, given that all organisms die, makes a virtuous and meaningful life\" into a neurosurgeon at Stanford working in the brain, the most critical place for human identity, and finally into a patient and new father confronting his own mortality.  What makes life worth living in the face of death? What do you do when the future, no longer a ladder toward your goals in life, flattens out into a perpetual present? What does it mean to have a child, to nurture a new life as another fades away? These are some of the questions Kalanithi wrestles with in this profoundly moving, exquisitely observed memoir. Paul Kalanithi died in March 2015, while working on this book, yet his words live on as a guide and a gift to us all. \"I began to realize that coming face to face with my own mortality, in a sense, had changed nothing and everything,\" he wrote. \"Seven words from Samuel Beckett began to repeat in my head: 'I can't go on. I'll go on.'\" When Breath Becomes Air is an unforgettable, life-affirming reflection on the challenge of facing death and on the relationship between doctor and patient, from a brilliant writer who became both. ",
+            "genre" : "non fiction"
+
+        },
+
+        {
+            "id":13,
+            "author": "Kate Bromley",
+            "title" : "Talk Bookish to Me",
+            "description" : "Kara Sullivan’s life is full of love - albeit fictional. As a best-selling romance novelist and influential bookstagrammer, she’s fine with getting her happily-ever-after fix between the covers of a book. But right now? Not only is Kara’s best friend getting married next week - which means big wedding stress - but the deadline for her next novel is looming, and she hasn’t written a single word. The last thing she needs is for her infuriating first love, Ryan Thompson, to suddenly appear in the wedding party. But Ryan’s unexpected arrival sparks a creative awakening in Kara that inspires the steamy historical romance she desperately needs to deliver. With her wedding duties intensifying, her deadline getting closer by the second and her bills not paying themselves, Kara knows there’s only one way for her to finish her book and to give her characters the ever-after they deserve. But can she embrace the unlikely, ruggedly handsome muse - who pushes every one of her buttons - to save the wedding, her career and, just maybe, write her own happy ending? \"A fun and sexy romp, with chemistry that gave me all the feels!\" (Jennifer Probst, New York Times best-selling author of Our Italian Summer)",
+            "genre" : "humor"
+
+        },
+
+        {
+            "id":14,
+            "author": "Michael Crichton",
+            "title" : "Odds On",
+            "description" : "The plan: to rob the Reina, a super-luxury hotel off the coast of Spain. The crew: three seasoned criminals with the skills to pull off the heist of the century. The edge: every aspect of the scheme has been simulated in a computer, down to the last variable. The complication: three beautiful women with agendas of their own - and the sort of variables no computer can fathom....",
+            "genre" : "fiction"
+
+        },
+
+        {
+            "id":15,
+            "author": "Neil Freudenberger",
+            "title" : "Lost and Wanted",
+            "description" : "\"Freudenberger's brilliant and compassionate novel takes on the big questions of the universe and proves, again, that she is one of America's greatest writers.\" --Andrew Sean Greer, Pulitzer Prize-winning author of Less An emotionally engaging, suspenseful new novel from the best-selling author, told in the voice of a renowned physicist: an exploration of female friendship, romantic love, and parenthood--bonds that show their power in surprising ways. Helen Clapp's breakthrough work on five-dimensional spacetime landed her a tenured professorship at MIT; her popular books explain physics in plain terms. Helen disdains notions of the supernatural in favor of rational thought and proven ideas. So it's perhaps especially vexing for her when, on an otherwise unremarkable Wednesday in June, she gets a phone call from a friend who has just died. That friend was Charlotte Boyce, Helen's roommate at Harvard. The two women had once confided in each other about everything--in college, the unwanted advances Charlie received from a star literature professor; after graduation, Helen's struggles as a young woman in science, Charlie's as a black screenwriter in Hollywood, their shared challenges as parents. But as the years passed, Charlie became more elusive, and her calls came less and less often. And now she's permanently, tragically gone. As Helen is drawn back into Charlie's orbit, and also into the web of feelings she once had for Neel Jonnal--a former college classmate now an acclaimed physicist on the verge of a Nobel Prize-winning discovery--she is forced to question the laws of the universe that had always steadied her mind and heart. Suspenseful, perceptive, deeply affecting, Lost and Wanted is a story of friends and lovers, lost and found, at the most defining moments of their lives.",
+            "genre" : "mystery"
+
+        },
+
+        {
+            "id":16,
+            "author": "Sarah Crossan",
+            "title" : "Toffee",
+            "description" : "Allison is in danger at home. Her stepmother has run away and her father is getting worse. So she runs away too and with no where to live finds herself hiding out, miles from home, in an elderly woman’s shed. But this woman, Marla, has dementia and doesn’t recognise her as Allison, believing she is an old friend from her past called Toffee. So this is who Allison becomes, morphing into a person Marla usually knows and trusts but sometimes fears and fights. Eventually Allison’s stepmother shows up, armed with a new baby girl, a new sibling. Marla then finds herself, once lonely and vulnerable, the saviour to three desperate women. But Marla’s son is frustrated with his mother, and can be angry and violent. Is there a way for this new family to stay together? ",
+            "genre" : "fiction"
+
+        }
+    ]
+
+}
