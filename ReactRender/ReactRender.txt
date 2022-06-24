@@ -1,0 +1,48 @@
+Pre-requisites 
+
+  - React Basics 
+
+  - React Hooks 
+
+
+
+Rendering in React 
+
+  Rendering process 
+
+  when a react code is run 
+
+  - code in components translated into DOM 
+
+  Two phases 
+
+  i) Render Phase 
+
+    1st render 
+
+      - React starts at root and goes to leaf roots 
+      - React executes createElement by converting jsx to javaScript objects 
+
+      
+    rerender 
+
+        - starts at root and finds leaves that are flagged that have any change 
+        - then react invokes createElement and converts jsx to javaScript   of the flagged components
+        - then react will compare new render values with previous render values then a list will be made of all the changes that were resulted 
+
+
+  ii) Commit Phase 
+
+    1st render 
+
+      - then all react elements are converted to DOM 
+
+
+    rerender 
+
+      - then react will get this list and changes the list of elements to the dom 
+
+
+ Note: The commit phase is usually very fast, but rendering can be slow 
+ 
+    
